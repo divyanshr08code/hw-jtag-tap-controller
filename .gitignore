@@ -1,0 +1,28 @@
+# Vivado generated files and directories
+*.jou
+*.log
+*.str
+*.wdb
+*.pb
+*.dmp
+*.backup
+*.tmp
+
+# Vivado project-generated directories
+.cache/
+.hw/
+.ip_user_files/
+.sim/
+.runs/
+.gen/
+.Xil/
+
+# Simulation/generated output
+xsim.dir/
+*.sdb
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
