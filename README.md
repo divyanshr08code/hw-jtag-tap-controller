@@ -57,8 +57,9 @@ The project implements the TAP finite-state machine, instruction register, instr
 ## Repository Structure
 
 ```text
-JTAG-TAP-Controller/
+hw-jtag-tap-controller/
 ├── README.md
+├── LICENSE
 ├── .gitignore
 ├── rtl/
 │   ├── JTAG_tap.v
@@ -71,6 +72,7 @@ JTAG-TAP-Controller/
 ├── tb/
 │   └── tap_tb.v
 └── vivado/
+    ├── create_project.tcl
     └── JTAG_TAP_Controller.xpr
 ```
 
@@ -179,7 +181,7 @@ The testbench is written to be self-checking: failures increment an error counte
 
 Possible extensions for a more complete JTAG implementation include:
 
-- Standard JTAG `BYPASS`, `IDCODE`, and additional IEEE 1149.1 instructions
+- Additional IEEE 1149.1 instructions beyond `IDCODE` and `BYPASS`
 - More rigorous instruction-register capture behavior
 - A parameterized IDCODE/register architecture
 - Explicit assertions for TAP state-transition verification
@@ -190,4 +192,4 @@ Possible extensions for a more complete JTAG implementation include:
 
 ## License
 
-This project is provided for educational and portfolio purposes. Add a project-specific license before redistributing it as open-source software.
+Released under the [MIT License](LICENSE).
